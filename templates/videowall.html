@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block script %}
+ <script>
+  $(document).ready(function(){
+    // Board
+    var wall = VIDEOWALL;
+
+    // Init
+    wall.init();
+
+    console.log(wall);
+    console.log(wall.container);
+  });  
+ </script>
+{% endblock %}
+
+{% block content %}
+ <div class="videowall">
+   
+ </div>
+{% endblock %}

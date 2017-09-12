@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block script %}
+ <script>
+  $(document).ready(function(){
+    // Board
+    var board = SOSBOARD;
+
+    // Initialize
+    board.init();
+  });
+ </script>
+{% endblock %}
+
+{% block content %}
+ <div class="row">
+
+  <!-- Telephone queue -->
+  <div class="large-6 columns">
+   <h1><i class="zmdi zmdi-phone-in-talk"></i>Telefonkø<i class="zmdi zmdi-hc-spin zmdi-refresh"></i></h1>
+   <div id="telephone" class="card"></div>
+  </div>
+  
+  <!-- Messages -->
+  <div class="large-6 columns">
+   <h1>
+    <i class="zmdi zmdi-info-outline"></i>Beskjeder<i class="zmdi zmdi-hc-spin zmdi-refresh"></i>
+    <div class="add message msg"><i class="zmdi zmdi-notifications-add"></i> Ny beskjed</div>
+    <div class="add message wtm"><i class="zmdi zmdi-alarm-plus"></i> Ny ventetid</div>
+   </h1>
+   <div id="waitingtime" class="card"></div>
+  </div>
+
+ </div>
+
+ <!-- Theme selector -->
+ <div id="themes">
+   <div class="theme" data-theme="default" title="Standard"></div>
+   <div class="theme" data-theme="dark" title="Mørk"></div>
+   <div class="theme" data-theme="black" title="Svart"></div>
+ </div>
+{% endblock %}

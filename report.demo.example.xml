@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="Custom_Call_Type_RealTime">
+	<row index="2">
+		<column index="0" name="Queue Name">Linje 1_12345</column>
+		<column index="1" name="Queue Now">3</column>
+		<column index="2" name="Calls Offered">1</column>
+		<column index="3" name="Calls Answered">1</column>
+		<column index="4" name="Answ. %">1.000000000000</column>
+		<column index="5" name="Agent at calls Now">0</column>
+		<column index="6" name="Longest Queued">1214</column>
+		<column index="7" name="ASA">5</column>
+		<column index="8" name="ServiceLevel">1.0</column>
+		<column index="9" name="SL - Aband10sec">1.000000000000</column>
+		<column index="10" name="Aband 10Sec">0</column>
+		<column index="11" name="Avg. Handled Time">238.000000000000</column>
+		<column index="12" name="Calls Offered - Aband10Sec">1</column>
+		<column index="13" name="Available agents">3</column>
+	</row>
+	<row index="5">
+		<column index="0" name="Queue Name">Linje 2_23456</column>
+		<column index="1" name="Queue Now">2</column>
+		<column index="2" name="Calls Offered">6</column>
+		<column index="3" name="Calls Answered">6</column>
+		<column index="4" name="Answ. %">1.000000000000</column>
+		<column index="5" name="Agent at calls Now">0</column>
+		<column index="6" name="Longest Queued">24</column>
+		<column index="7" name="ASA">58</column>
+		<column index="8" name="ServiceLevel">0.66667</column>
+		<column index="9" name="SL - Aband10sec">0.666666666666</column>
+		<column index="10" name="Aband 10Sec">0</column>
+		<column index="11" name="Avg. Handled Time">290.500000000000</column>
+		<column index="12" name="Calls Offered - Aband10Sec">6</column>
+		<column index="13" name="Available agents">3</column>
+	</row>
+	<row index="8">
+		<column index="0" name="Queue Name">Linje 3_34567</column>
+		<column index="1" name="Queue Now">1</column>
+		<column index="2" name="Calls Offered">35</column>
+		<column index="3" name="Calls Answered">34</column>
+		<column index="4" name="Answ. %">0.971428571428</column>
+		<column index="5" name="Agent at calls Now">0</column>
+		<column index="6" name="Longest Queued">93</column>
+		<column index="7" name="ASA">97</column>
+		<column index="8" name="ServiceLevel">0.45714</column>
+		<column index="9" name="SL - Aband10sec">0.457142857142</column>
+		<column index="10" name="Aband 10Sec">0</column>
+		<column index="11" name="Avg. Handled Time">167.823529411764</column>
+		<column index="12" name="Calls Offered - Aband10Sec">35</column>
+		<column index="13" name="Available agents">3</column>
+	</row>
+</report>

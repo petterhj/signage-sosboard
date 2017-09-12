@@ -1,0 +1,244 @@
+<html>
+ <head>
+  <title>SOSBOARD Guide</title>
+  <style>
+    * {
+      font-family: Arial;
+    }
+    body {
+      margin: 50px;
+    }
+    h1 { font-size: 18px; padding-bottom: 5px; margin-top: 20px; border-bottom: 2px solid #000; }
+    h2 { font-size: 16px; padding-bottom: 5px; margin-top: 70px; color: darkred; border-bottom: 2px solid darkred; }
+    h3 { font-size: 14px; padding-bottom: 5px; margin-top: 30px; color: #000; }
+
+    span.app {
+      font-weight: bold;
+    }
+    span.menu {
+      color: #666;
+      background-color: #EFEFEF;
+      border-radius: 3px;
+      padding: 3px 7px 3px 23px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC7UlEQVQ4jW1SXUiTYRg977t3ps2+kEw/NU1t06zRj2kLamXaXPZjahFlQlQQ5E1ddRVUUHRjXpRCF3VRRBbE+CgkI0Ppj36xMPo1V7pyftWiWD/UttNNSkMfeO7OOTznOUeQBABEo1EYhlHX3t6+9vGrhyVpmh6s8q6+3NjY2OLz+Tacv9C25Z3Zn++YNvPFigrP1YaGhjNJSUm/xYjA0NCQPnNp1pB7H2FNAkQC8P42YHtU1h3M6i4rrAEEgdhvoOckcPbgDbfb7b4l8W80TfuWoqWZKfmAkED4HZBXCTwLd5cVbgDCw8CfX8BkO0ACuq4HAWBUwGaz/dhWvav1lQ+YkA3YZgF3TgDDT4BrTUBiJjCpAAjcBBamrvc5HI4+AADJuF1ZtfJKcS24ZqdiToLiOkxmtlT01FtYuhUscZU8CIVC2gg+jhwIBPS1uQX+HrjohcYrci6pVvOpZRHrkcr7KKU31+EPBoOpI5xRCwBgGEZd9SBy22QAiVLiKj5ib+wxLmEYNilxXX5C7SByDcOoGSWNKJmmmep2zuktElY2yxmkquRbtYTZQvGRWkgqL9sss7lYTORSR+HrQCCgx11w/Nix3fufW5y1QsdGmYUwIsjABGTDihQk4Cf+wCumokbqOOxPtre2tOyOS2FgYCCnQCTjNj+jix8hAZzmIL4ggtaYH18RQRc/4WLsAzKQCNM00+IsdHR0VFZJjWukxnRhoV1Yec4ym2FVzluWBbQLK4uElQdkDj2W5GhnZ2f5mBScTmevqZbxgSplobDyh6rgd1VOKi/r5ZTRX8zPy/ePm8L6ujrfTX5GiUjHRpGBQ7GXGMQvtPINHLChGFNxDyEUuVx3x6RAEqFQSKssW951ROZxldBYIWw8LKdzs5xCj0jmUTmDy+fMe9Lf358zbpFIIhKJoLm5eU9WZub766qYUeVhj3Jxelr6cFNT055wODzxf/wYgf9buWP79lPleXZ//abNbX19ffnj4f4CFaG2hpYG7h0AAAAASUVORK5CYII=');
+      background-repeat: no-repeat;
+      background-position: 3px 3px;
+    }
+    span.cmd {
+      font-family: Consolas;
+      color: #EFEFEF;
+      background-color: #39393A;
+      border-radius: 3px;
+      padding: 3px 7px;
+    }
+    span.key {
+      font-family: Consolas;
+      color: #EFEFEF;
+      background-color: #666;
+      border-radius: 3px;
+      padding: 3px 7px;
+    }
+    span.value {
+      font-family: Consolas;
+      color: #EFEFEF;
+      background-color: #666;
+      border-radius: 3px;
+      padding: 3px 7px;
+    }
+
+    table th { padding: 7px; font-weight: bold; text-align: left; background-color: #EFEFEF; }
+    table td { padding: 7px; }
+    table td:nth-child(1) { font-weight: bold; width: 300px; }
+  </style>
+ </head>
+
+ <body>
+  <h1>SOSBOARD Guide</h1>
+  <p>Alle <span class="cmd">kommandoer</span> listet opp under kjøres i programmet <span class="app">Terminal</span>, som hentes fra <span class="menu">Menu > Accessories > Terminal</span>.</p>
+  <p>
+  <a href="#frontend">Frontend</a><br/>
+  <a href="#backend">Backend</a><br/>
+  <a href="#system">System</a><br/>
+  </p>
+
+  <a name="frontend"><h2>Frontend</h2>
+  <p>Nettsiden som kjøres i fullskjerm nettleser. Bruk <span class="app">IceWeasel</span>.</p>
+  <table>
+   <tr>
+    <th></td>
+    <th>Alternativ 1</th>
+    <th>Alternativ 2</th>
+    <th>Alternativ 3</th>
+   </tr>
+   <tr>
+    <td>Åpne</td>
+    <td><a href="http://127.0.0.1">Klikk her</a></td>
+    <td><span class="cmd">iceweasel "http://127.0.0.1/"</span></td>
+    <td><span class="menu">Menu > Shutdown > <span class="app">IceWeasel</span></span>, gå til adressen <span class="app">http://127.0.0.1</span></td>
+   </tr>
+   <tr>
+    <td>Fullskjerm</td>
+    <td>Trykk <span class="key">F11</span> når nettleseren kjører</td>
+    <td>Bruk <a href="https://support.cdn.mozilla.net/media/uploads/gallery/images/2014-03-21-06-47-41-f380ee.png">menyen i IceWeasel</a></td>
+    <td></td>
+   </tr>
+  </table>
+
+  <h3>Konfigurasjonsmuligheter</h3>
+  <p>Åpne og endre filen <span class="app">/home/pi/sosboard/static/js/config.js</span></p>
+  <table>
+   <tr>
+    <th>Variabel</td>
+    <th>Verdi</th>
+    <th>Standardverdi</th>
+    <th></th>
+   </tr>
+   <tr>
+    <td>config.debug</td>
+    <td><span class="value">false</span> for produksjon, <span class="value">true</span> for debug-modus</td>
+    <td><span class="value">false</span></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>config.tq.refreshrate</td>
+    <td>Antall millisekunder mellom hver oppdatering av <i>telefonkø</i></td>
+    <td><span class="value">10000</span> = 10 sek.</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>config.wt.refreshrate</td>
+    <td>Antall millisekunder mellom hver oppdatering av <i>ventetider</i></td>
+    <td><span class="value">30000</span> = 30 sek.</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>config.wt.default_expiration</td>
+    <td>Antall timer fra opprettelse til en ventetid automatisk utløper</td>
+    <td><span class="value">5</span></td>
+    <td></td>
+   </tr>
+  </table>
+
+  <a name="backend"><h2>Backend</h2>
+  <p>Serveren som må kjøre i bakgrunnen. Kjører av seg selv ved oppstart.</p>
+  <table>
+   <tr>
+    <th></td>
+    <th>Alternativ 1</th>
+    <th></th>
+    <th></th>
+   </tr>
+   <tr>
+    <td>Sjekke status</td>
+    <td><span class="cmd">sudo supervisorctl status sosboard</span></td>
+    <td></td>
+    <td>Bør gi "RUNNING" som svar</td>
+   </tr>
+   <tr>
+    <td>Starte på nytt</td>
+    <td><span class="cmd">sudo supervisorctl restart sosboard</span></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>Stoppe</td>
+    <td><span class="cmd">sudo supervisorctl stop sosboard</span></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>Starte</td>
+    <td><span class="cmd">sudo supervisorctl start sosboard</span></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>Ny database</td>
+    <td><span class="cmd">rm /home/pi/sosboard/database.py</span>, deretter <span class="cmd">sudo supervisorctl restart sosboard</span></td>
+    <td></td>
+    <td><b>OBS:</b> Sletter alle tidligere data</td>
+   </tr>
+  </table>
+
+  <h3>Konfigurasjonsmuligheter</h3>
+  <p>Åpne og endre filen <span class="app">/home/pi/sosboard/config.py</span>. Endringer her krever at backend restartes.</p>
+  <table>
+   <tr>
+    <th>Variabel</td>
+    <th>Verdi</th>
+    <th>Standardverdi</th>
+    <th></th>
+   </tr>
+   <tr>
+    <td>DEBUG</td>
+    <td><span class="value">False</span> for produksjon, <span class="value">True</span> for debug-modus</td>
+    <td><span class="value">False</span></td>
+    <td>I debug-modus brukes en lokal test-fil for telefondata</td>
+   </tr>
+   <tr>
+    <td colspan="4"><br></td>
+   </tr>
+   <tr>
+    <td>HOST</td>
+    <td>CUIC-adresse</td>
+    <td><span class="value">10.20.3.40</span></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>PORT</td>
+    <td>CUIC-port</td>
+    <td><span class="value">8444</span></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>VIEWID</td>
+    <td></td>
+    <td><span class="value">1234425ECA213D4FC6123...</span></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>UUID</td>
+    <td></td>
+    <td><span class="value">9feaf-1f8a...</span></td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>TIMEOUT</td>
+    <td></td>
+    <td><span class="value">3</span></td>
+    <td>Sekunder</td>
+   </tr>
+   <tr>
+    <td colspan="4"><br></td>
+   </tr>
+   <tr>
+    <td>SQLITE_DATABASE</td>
+    <td></td>
+    <td><span class="value">/home/pi/sosboard/database.db</span></td>
+    <td>Full sti til SQLite-database (filbasert)</td>
+   </tr>
+  </table>
+
+  <a name="system"><h2>System</h2>
+  <table>
+   <tr>
+    <th></td>
+    <th>Alternativ 1</th>
+    <th>Alternativ 2</th>
+    <th>Alternativ 3</th>
+   </tr>
+   <tr>
+    <td>Restarte maskin</td>
+    <td><span class="cmd">sudo restart</span></td>
+    <td><span class="menu">Menu > Shutdown > Reboot</span></td>
+    <td>Dra ut kontakten, og sette inn igjen</td>
+   </tr>
+   <tr>
+    <td>Slå av</td>
+    <td><span class="cmd">sudo shutdown</span></td>
+    <td><span class="menu">Menu > Shutdown > Shutdown</span></td>
+    <td>Dra ut kontakten</td>
+   </tr>
+  </table>
+ </body>
+</html>

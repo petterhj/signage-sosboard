@@ -1,0 +1,397 @@
+/* Body */
+body {
+	position: 					relative;
+	background-color: 			#E5E5E5;
+	margin: 					0;
+
+	/* Row */
+	> div.row {
+		height: 					100%;
+
+		/* Column */
+		> div.columns {
+			height: 					100%;
+
+			@media only screen and (min-width: 64.063em) { 
+				&:nth-child(1) { padding: 20px 5px 20px 25px; }
+				&:nth-child(2) { padding: 20px 25px 20px 5px; }
+			}
+
+			/* Title */
+			> h1 {
+				position: 					relative;
+				margin: 					20px 20px 5px 25px;
+				font-size: 					25px;
+				font-weight: 				bold;
+				color: 						#333;
+			
+				/* Icon */
+				> i.zmdi {
+					margin-right: 				15px;
+					color: 						#666;
+				
+					&.zmdi-refresh {
+						display: 					none;
+						float: 						right;
+					}
+				}
+
+				/* Buttons */
+				div.add {
+					display: 					none;
+					position: 					absolute;
+					bottom:						-5px;
+					right:						100px;
+					padding:					4px 7px;
+					border-radius: 				4px 4px 0 0;
+					font-size:					14px;
+					color:						#FFF;
+					background-color: 			lighten(#4CAF50, 20%);
+
+					> i.zmdi {
+						margin-right: 				3 px;
+					}
+
+					&:hover {
+						background-color: 			#4CAF50;
+						cursor: 					pointer;
+					}
+					&.wtm {
+						right:						207px;
+					}
+				}
+			}
+		}
+	}
+
+	/* Theme selector */
+	div#themes {
+		position: 				absolute;
+		bottom:					0;
+		right:					0;
+		opacity: 				0.1;
+
+		> div.theme {
+			float:					left;
+			width:					10px;
+			height:					10px;
+			margin:					3px 3px 3px 0;
+			border:					1px solid #333;
+			cursor: 				pointer;
+
+			&[data-theme="default"] { background-color: #E5E5E5; }
+		}
+		&:hover {
+			opacity: 				1;
+		}
+	}
+
+	/* Debug indicator */
+	/*&[class$='debug']:before {*/
+	&.py-debug:before,
+	&.js-debug:before {
+		position: 					absolute;
+		top: 						0;
+		right: 						0;
+		padding: 					3px 10px;
+		border-bottom-left-radius: 	5px;
+		background-color: 			orange;
+		font-size: 					11px;
+		color: 						#FFF;
+	}
+
+	&.py-debug:before { content: 'PY: DEBUG'; }
+	&.js-debug:before { content: 'JS: DEBUG'; }
+	&.py-debug.js-debug:before { content: 'PY+JS: DEBUG'; }
+}
+
+
+
+/* Card */
+div.card {
+	position: 					relative;
+	margin: 					0 20px;
+	background-color: 			#FFF;
+	border-radius: 				5px;
+	padding: 					10px;
+	overflow: 					auto;
+	height: 					calc(~'100% - 90px');
+	box-shadow: 				0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+	/* Item */
+	div.line {
+		position: 					relative;
+		margin: 					0;
+		overflow: 					auto;
+		padding: 					10px;
+		min-height: 				85px;
+
+		/* Inputs */
+		input[type="text"] {
+			box-shadow: 				none;
+			margin:						0;
+			box-shadow: 				none;
+			border-radius: 				3px;
+			border: 					0;
+			background-color: 			#EFEFEF;
+			padding:					0 8px 0 8px;
+			height: 					37px;
+			line-height: 				37px;
+
+			&:disabled {
+				background-color: 			transparent;
+			}
+
+			/* Error */
+			&.error {
+				background-color: 			#FFEBEE;
+			}
+		}
+
+		/* Icons */
+		> i.zmdi {
+			float: 						left;
+			font-size: 					30px;
+			margin-top: 				18px;
+			width: 						36px;
+			height: 					36px;
+			color: 						darken(#CCC, 25%);
+			border-radius: 				50%;
+			text-align: 				center;
+
+			&.zmdi-timer { /*color:red;*/ }
+			&.zmdi-notifications-none { /*color:blue;*/ }
+		}
+		> i.zmdi-close {
+			visibility: 				hidden;
+			position: 					absolute;
+			top:						6px;
+			left:						10px;
+			font-size: 					21px;
+			padding-top: 				7px;
+			background-color: 			#F44336;
+			opacity: 					0.4;
+			color: 						#FFF;
+
+			&:hover {
+				opacity: 					1;
+				cursor:						pointer;
+			}
+		}
+
+		/* Floater */
+		> span.floater {
+			position: 					absolute;
+			right:						5px;
+			top:						8px;
+			overflow: 					hidden;
+			width: 						72px;
+			height: 					72px;
+			border:						1px solid #FFF;
+			border-radius: 				50%;
+			background-color: 			#EFEFEF;
+			text-align: 				center;
+			z-index: 					999;
+
+			&.red { background-color: #FFCDD2; }
+			&.green { background-color: #4CAF50; }
+
+			> input {
+				float:						left;
+				text-align: 				center;
+				font-size: 					30px;
+				font-weight: 				bold;
+				width: 						72px;
+				height: 					72px;
+			}
+			> span {
+				float:						left;
+				font-size: 					0.7em;
+				color: 						#666;
+			}
+			> i.zmdi {
+				color: 						#FFF;
+				font-size: 					40px;
+				padding-top:				15px;
+			}
+
+			/* Satellite */
+			&.satellite {
+				top:						23px;
+				right: 						60px;
+				padding: 					5px 20px 5px 15px;
+				width: 						auto;
+				height: 					auto;
+				border-radius: 				0;
+				border-top-left-radius: 	40px;
+				border-bottom-left-radius: 	40px;
+				font-size: 					20px;
+				font-weight: 				bold;
+				z-index: 					9;
+				color:						#666;
+			}
+		}
+
+		/* Created */
+		> h2.created {
+			position: 					relative;
+			float: 						left;
+			font-size: 					23px;
+			font-weight: 				bold;
+			margin: 					17px 10px 0 25px;
+			width: 						auto;
+			border: 					0;
+			box-shadow: 				none;
+			color: 						#999;
+
+			/* Date */
+			> span {
+				position: 					absolute;
+				font-size: 					12px;
+				top: 						30px;
+				left: 						5px;
+				color: 						darken(#EFEFEF, 10%);
+				border-top:					1px dotted #EFEFEF;
+				padding:					0 10px;
+			}
+		}
+
+		/* Title */
+		> input[name="title"] {
+			float: 						left;
+			width: 						calc(~'100% - 150px');
+			margin: 					15px 0 5px 20px;
+			font-size: 					28px;
+			font-weight: 				bold;
+		}
+		> h2.created + input[name="title"] {
+			width: 						calc(~'100% - 230px');
+		}		
+
+		/* Extra */
+		> div {
+			display: 					none;
+			position: 					relative;
+			clear: 						both;
+			width: 						auto;
+			margin: 					0 0 5px 149px;
+
+			> input[type=text] {
+				font-size: 					23px;
+				color: 						#666;
+				width: 						100%;
+				padding-left: 				45px;
+
+				&[name=expires] {
+					width: 						110px;
+				}
+			}
+
+			&:before {
+				position:					absolute;
+				top:						0;
+				left:						10px;
+				font-size: 					25px;
+				font-family: 				'Material-Design-Iconic-Font';
+				content: 					'\f1f7';
+				color: 						#CCC;
+			}
+			&.comment:before {
+				color: 						#FF9800;
+			}
+
+			&.expires {
+				> span {
+					position: 					absolute;
+					top: 						10px;
+					left:						120px;
+					color:						#E57373;
+					font-size: 					14px;
+					font-weight: 				bold;
+				}
+
+				&:before {
+					content: 					'\f337';
+					color:						#E57373;
+				}
+			}
+		}
+
+		/* Edit mode */
+		&.edit {
+			> i.zmdi {
+				visibility: 				hidden;
+			}
+			> i.zmdi-close {
+				visibility: 				visible;
+			}
+			> span.floater {
+				border: 					1px solid #CCC;
+			}
+			> div {
+				display: 					block;
+				margin-right: 				110px;
+			}
+		}
+
+		/* Add item */
+		&.add {
+			> span.floater.green {
+				border: 					1px solid #FFF;
+				cursor: 					pointer;
+				opacity: 					0.4;
+
+				&:hover {
+					opacity:					1;
+				}
+			}
+		}
+
+		/* Message */
+		&.message {
+			> h2.created + input[name="title"] {
+				width: 						calc(~'100% - 150px');
+			}	
+		}
+	}
+
+	/* Error */
+	div.error {
+		position: 					absolute;
+		bottom:						3px;
+		left:						10px;
+		font-size: 					11px;
+		color: 						red;
+	}
+
+	/* Status */
+	&:before {
+		position: 					absolute;
+		bottom:						0;
+		right:						0;
+		content: 					' ';
+		width:						0;
+		height: 					0;
+		border-style: 				solid;
+		border-width: 				0 0 15px 15px;
+		border-color: 				transparent;
+		opacity: 					0.4;
+	}
+	&[data-status="active"]:before { border-color: transparent transparent green transparent; }
+	&[data-status="inactive"]:before { border-color: transparent transparent orange transparent; }
+	&[data-status="error"]:before { border-color: transparent transparent red transparent; }
+}
+
+
+/* Autocomplete */
+div.autocomplete-suggestions {
+	background-color: 			#FFF;
+	border: 					1px solid #CCC;
+	border-radius:				3px;
+}
+div.autocomplete-suggestion {
+	padding: 					5px;
+}
+div.autocomplete-suggestion.autocomplete-selected {
+	background-color: 			#EFEFEF;
+}
